@@ -1,0 +1,16 @@
+# VoicePrompt — local voice → image pipeline
+# Python 3.10+ recommended
+
+# Speech
+faster-whisper>=1.0.0
+sounddevice>=0.5.0
+numpy>=1.24.0
+
+# LLM (LM Studio OpenAI-compatible)
+openai>=1.40.0
+
+# ComfyUI HTTP client
+requests>=2.31.0
+
+# Optional: stricter VAD than pure energy-threshold (install if wheels work on your OS)
+# webrtcvad>=2.0.10

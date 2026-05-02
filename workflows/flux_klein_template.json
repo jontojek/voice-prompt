@@ -1,0 +1,12 @@
+{
+  "6": {
+    "inputs": {
+      "text": "REPLACE THIS FILE: In ComfyUI use Save (API Format) for your Flux graph. Point Settings to CLIP encode node id in `comfy_prompt_node_id`.",
+      "clip": ["99", 0]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "PLACEHOLDER CLIP Encode"
+    }
+  }
+}

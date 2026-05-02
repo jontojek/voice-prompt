@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+.env.*
+
+# Runtime outputs (generated images)
+outputs/
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/
