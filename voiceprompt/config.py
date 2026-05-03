@@ -47,10 +47,14 @@ class Settings:
     whisper_vad_filter: bool = os.environ.get("VOICEPROMPT_WHISPER_VAD", "1") != "0"
     whisper_language: Optional[str] = os.environ.get("VOICEPROMPT_LANGUAGE") or None
 
-    # LM Studio (OpenAI-compatible)
-    lm_base_url: str = os.environ.get("OPENAI_BASE_URL", "http://127.0.0.1:1234/v1")
+    # LM Studio (OpenAI-compatible). Prefer VOICEPROMPT_LM_BASE_URL so a global
+    # OPENAI_BASE_URL (e.g. cloud API) does not break the local server step.
+    lm_base_url: str = (os.environ.get("VOICEPROMPT_LM_BASE_URL") or "").strip() or os.environ.get(
+        "OPENAI_BASE_URL", "http://127.0.0.1:1234/v1"
+    )
     lm_api_key: str = os.environ.get("OPENAI_API_KEY", "lm-studio")
-    lm_model: str = os.environ.get("VOICEPROMPT_LM_MODEL", "local-model")
+    # Empty or legacy "local-model": resolved at runtime from GET /v1/models (see lm_client).
+    lm_model: str = os.environ.get("VOICEPROMPT_LM_MODEL", "")
     lm_temperature: float = _env_float("VOICEPROMPT_LM_TEMP", 0.35)
     lm_max_tokens: int = _env_int("VOICEPROMPT_LM_MAX_TOKENS", 512)
 

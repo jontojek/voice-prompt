@@ -160,10 +160,7 @@ class VoicePipeline:
             return
 
         print("", flush=True)
-        print("", flush=True)
-        print(f"[Whisper] {text}", flush=True)
-        print("", flush=True)
-        print("", flush=True)
+        print(f"[You said]  {text}", flush=True)
         self._set(f"Heard: “{text[:80]}{'…' if len(text) > 80 else ''}”")
 
         self._set("Enhancing prompt…")
@@ -178,9 +175,9 @@ class VoicePipeline:
 
     def _generate_and_publish(self, enhanced: str, raw_spoken: str) -> None:
         print("", flush=True)
-        print("", flush=True)
-        print(f"[Enhanced] {enhanced}", flush=True)
-        print("", flush=True)
+        if raw_spoken == "(regenerate)":
+            print("[Regen]     Reusing last enhanced prompt (see line below).", flush=True)
+        print(f"[Enhanced]  {enhanced}", flush=True)
         print("", flush=True)
         self._set("Generating image…")
         base_wf = self.reload_workflow_if_needed()

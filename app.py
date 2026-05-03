@@ -39,8 +39,9 @@ Commands (type one line and press Enter):
   quit       Exit
 
 Tips:
-  • LM Studio: put your FLUX / rewrite instructions in the server or chat preset — VoicePrompt only
-    sends your spoken line as the ``user`` message.
+  • Flow: you speak → transcribed line → LM Studio expands it → that text goes to ComfyUI. The console
+    shows ``[You said]`` then ``[Enhanced]`` each run. To change how LM rewrites, edit
+    ``voiceprompt/lm_system_default.txt`` only.
   • Speak, then pause briefly so Whisper knows you finished the phrase.
   • Saved PNGs: outputs/history/vp_*.png
 """.strip(),

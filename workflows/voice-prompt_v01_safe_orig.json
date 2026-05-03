@@ -61,7 +61,7 @@
   },
   "75:68": {
     "inputs": {
-      "value": 640
+      "value": 896
     },
     "class_type": "PrimitiveInt",
     "_meta": {
@@ -70,7 +70,7 @@
   },
   "75:69": {
     "inputs": {
-      "value": 640
+      "value": 1152
     },
     "class_type": "PrimitiveInt",
     "_meta": {
