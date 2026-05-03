@@ -18,7 +18,7 @@
 **VoicePrompt** listens to your microphone, transcribes with **Whisper**, sends the line to **LM Studio** for a single detailed **FLUX-style** prompt (see `voiceprompt/lm_system_default.txt`), then queues your **ComfyUI** graph and saves a **PNG** under `outputs/history/`. **Everything stays on your machine** — no cloud API required for the default path.
 
 **Console flow:** you’ll see **`[You said]`** (transcript) then **`[Enhanced]`** (exact text sent to ComfyUI).
-
+https://youtu.be/34YuC05p3_A?si=iRvg3t8ZG128z9ik
 ---
 
 ## What you need (one-time)
