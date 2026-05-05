@@ -1,15 +1,14 @@
 <div align="center">
 
-<img src="readme-hero.png" alt="VoicePrompt desktop: LM Studio, ComfyUI with FLUX.2 Klein, gallery, and VoicePrompt console" width="100%" />
+**Watch the walkthrough**
 
-**Stack in the screenshot**
+[**Open the video on YouTube →**](https://www.youtube.com/watch?v=34YuC05p3_A)
 
-| Role | What’s running |
-|------|----------------|
-| **LLM** (speech → rich image prompt) | **Meta Llama 3 8B Instruct** — `llama-3-8b-instruct` in [LM Studio](https://lmstudio.ai/) |
-| **Image model** (pixels) | **FLUX.2 Klein** in [ComfyUI](https://github.com/comfyanonymous/ComfyUI) |
+The link above and the thumbnail below both go to the same demo.
 
-*You can swap in other local LLMs or Comfy workflows; VoicePrompt only needs an OpenAI-compatible LM server and a workflow JSON with a text node to inject the prompt.*
+<a href="https://www.youtube.com/watch?v=34YuC05p3_A"><img src="https://img.youtube.com/vi/34YuC05p3_A/maxresdefault.jpg" alt="VoicePrompt demo on YouTube — click to watch" width="68%" /></a>
+
+*Click the thumbnail to open the video.*
 
 </div>
 
@@ -27,6 +26,25 @@ https://youtu.be/34YuC05p3_A?si=iRvg3t8ZG128z9ik
 2. **LM Studio** — local LLM + OpenAI-compatible server (default `http://127.0.0.1:1234/v1`).
 3. **ComfyUI** — with a workflow exported as **API JSON** (default path: `workflows/voice-prompt_v01.json`).
 4. **A microphone.**
+
+---
+
+## Desktop screenshot
+
+<div align="center">
+
+<img src="readme-hero.png" alt="VoicePrompt desktop: LM Studio, ComfyUI with FLUX.2 Klein, gallery, and VoicePrompt console" width="72%" />
+
+**Stack in the screenshot**
+
+| Role | What’s running |
+|------|----------------|
+| **LLM** (speech → rich image prompt) | **Meta Llama 3 8B Instruct** — `llama-3-8b-instruct` in [LM Studio](https://lmstudio.ai/) |
+| **Image model** (pixels) | **FLUX.2 Klein** in [ComfyUI](https://github.com/comfyanonymous/ComfyUI) |
+
+*You can swap in other local LLMs or Comfy workflows; VoicePrompt only needs an OpenAI-compatible LM server and a workflow JSON with a text node to inject the prompt.*
+
+</div>
 
 ---
 
